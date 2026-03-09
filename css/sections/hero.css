@@ -1,9 +1,8 @@
 
 
 .hero {
-    /* position: absolute; */
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(1, 12, 36, 0.712), rgba(1, 12, 36, 0.671)), url('/assets/background-1.jpg');
+    background: url('/assets/background-1.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
