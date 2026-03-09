@@ -2,7 +2,7 @@
 
 .hero {
     height: 100vh;
-    background: url('/assets/background-1.jpg');
+    background: blue;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
