@@ -43,17 +43,20 @@ a.nav_button:hover {
 
 header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
-    padding: 0 2rem;
+    height: 70px;
     background-color: #010c24;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
-    width: 100%;
-    max-width: 1200px;
-    height: 70px;
-    margin: 0 auto;
+    width: 1170px;
 
     display: flex;
     align-items: center;
@@ -147,22 +150,50 @@ header {
 
 /* ---RESPONSIVE--- */
 
-@media (max-width: 1020px) {
+@media screen and (max-width: 1228px) {
+    .navbar{
+        width: 1023px;
+    }
+}
+
+@media screen and (max-width: 1053px) {
+    .navbar{
+        width: 850px;
+    }
     .navbar .links,
     .navbar .buttons_action {
         display: none;
     }
-
+    
     .navbar .burger_menu_button {
         display: block;
     }
-
+    
     .burger_menu {
         display: block;
     }
 }
-@media (max-width: 576px) {
 
+@media screen and (max-width: 890px) {
+    .navbar{
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .navbar{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar{
+        width: clamp(200px, 90vw, 450px);
+    }
+}
+
+@media (max-width: 576px) {
+    
     .navbar .burger_menu_button {
         font-size: 1.3rem;
     }
@@ -173,8 +204,8 @@ header {
     }
 }
 
-@media screen and (max-width: 650px) {
-    .navbar{
-        width: clamp(270px, 90vw, 450px);
+@media screen and (max-width: 400px) {
+    .navbar .logo a {
+        font-size: 1.5rem;
     }
 }
