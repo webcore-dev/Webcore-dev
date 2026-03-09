@@ -172,3 +172,9 @@ header {
         width: unset;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .navbar{
+        width: clamp(270px, 90vw, 450px);
+    }
+}
