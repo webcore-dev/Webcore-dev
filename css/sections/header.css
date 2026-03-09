@@ -47,6 +47,7 @@ header {
     z-index: 1000;
     height: 70px;
     background-color: #010c24;
+    overflow: none;
 
     display: grid;
     grid-template-columns: auto;
@@ -193,7 +194,7 @@ header {
 }
 
 @media (max-width: 576px) {
-    
+
     .navbar .burger_menu_button {
         font-size: 1.3rem;
     }
