@@ -151,7 +151,7 @@ strong {
 
 @media screen and (max-width: 650px) {
     .hero_section{
-        width: 450px;
+        width: clamp(270px, 90vw, 450px);
     }
 
     .hero_info_title{
